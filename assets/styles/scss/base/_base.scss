@@ -1,0 +1,9 @@
+@use "../abstracts/colors" as c;
+
+html,body{
+    min-height: 100vh;
+}
+
+body{
+    background-color: c.$background-white-2;
+}

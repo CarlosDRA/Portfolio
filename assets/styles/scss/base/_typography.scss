@@ -1,3 +1,13 @@
+@use "../abstracts/colors" as c;
+
 *{
     font-family: "lato", sans-serif;
+}
+
+.link > a{
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: c.$supplementary-text;
+
 }

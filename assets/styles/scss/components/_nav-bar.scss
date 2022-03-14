@@ -5,7 +5,7 @@
 .nav-bar{
     height: 65px;
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
     background-color: c.$background-white;
 
@@ -110,5 +110,8 @@
         display: none;
     }
     
+    .nav-hidden{
+        visibility: visible;
+    }
 }
 

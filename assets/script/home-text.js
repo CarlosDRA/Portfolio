@@ -1,11 +1,14 @@
 "use strict"
 
-const words = ["DESIRES", "WANTS", "NEEDS", "DESERVES", "LOVES"];
+const words = ["DESIRE", "WANT", "NEED", "LOVE", "ADMIRE", "DREAM OF"];
 const wordContainer = document.querySelector(".word-play");
 
 
 function wordPlay(){
     wordContainer.innerText = randomWord(words);
+    setInterval(() => {
+        wordContainer.innerHTML = randomWord(words);
+    }, 10000);
 }
 
 function randomWord(words){

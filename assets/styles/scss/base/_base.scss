@@ -1,7 +1,11 @@
 @use "../abstracts/colors" as c;
 
+*{
+    box-sizing: content-box;
+}
+
 html,body{
-    min-height: 100vh;
+    height: 100vh;
 }
 
 body{

@@ -2,6 +2,7 @@
 
 
 @media screen and (min-width: 912px) {
+    //-------------------------------- Home section -------------------
     #home{
         height: 100vh;
         text-align: left;
@@ -23,7 +24,6 @@
     }
 
     .word-play{
-        text-align: left;
         margin: 90px auto;
     }
 
@@ -31,6 +31,19 @@
         margin-top: 15vh;
         width: 450px;
         display: flex;
+        justify-content: space-between;
+    }
+
+
+    // ---------------------------- About section-------------------
+    #about{
+        margin: 100px;
+    }
+
+
+    .about__card-container{
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
     }
 }

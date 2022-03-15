@@ -1,14 +1,5 @@
-"use strict"
+"use strict";
 
-let menuButton = document.querySelector(".nav-bar__menu");
-let navMenu = document.querySelector(".nav-bar__link-list");
-let page = document.getElementsByTagName("main");
+import Menu from "./menu.js";
 
-page[0].addEventListener("click", () =>{
-    navMenu.classList.add("nav-hidden");
-})
-
-menuButton.addEventListener("click", () =>{
-    navMenu.classList.toggle("nav-hidden");
-})
-
+let menu = new Menu();

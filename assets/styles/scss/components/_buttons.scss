@@ -1,0 +1,20 @@
+@use "../abstracts/colors" as c;
+
+.button{
+    width: 180px;
+    height: 30px;
+    border-radius: 25px;
+    border-style: solid;
+    color: c.$background-white;
+    background-color: c.$main-text;
+    border-color: c.$background-white;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &:active{
+        background-color: c.$background-white;
+        color: c.$main-text;
+    }
+}

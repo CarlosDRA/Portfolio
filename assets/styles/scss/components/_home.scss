@@ -1,5 +1,7 @@
 @use "../abstracts/colors" as c;
 
+//move this to their respective layouts
+
 #home{
     background-color: c.$main-text;
     color: c.$background-white;

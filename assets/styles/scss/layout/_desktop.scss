@@ -1,0 +1,36 @@
+@use "../abstracts/colors" as c;
+
+
+@media screen and (min-width: 912px) {
+    #home{
+        height: 100vh;
+        text-align: left;
+    }
+
+    .home__container{
+        margin: 0;
+        padding: 100px;
+        padding-top: 15vh;
+
+        h1{
+            margin-bottom: 20px;
+        }
+
+        .text{
+            width: 450px;
+            margin-top: 20px;
+        }
+    }
+
+    .word-play{
+        text-align: left;
+        margin: 90px auto;
+    }
+
+    .buttons-container{
+        margin-top: 15vh;
+        width: 450px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

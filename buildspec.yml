@@ -7,9 +7,10 @@ phases:
   pre_build:
     commands:
       - echo Started pre_build phase...
-      - ls -al
+      - pwd
+      - ls
       - aws --version
-      - aws s3 cp --recursive ./aws_code_pipeline/ s3:://www.carlosregaladodev.com
+      - aws s3 cp -r . s3:://www.carlosregaladodev.com
   build:
     commands:
       - echo Build started on `date`

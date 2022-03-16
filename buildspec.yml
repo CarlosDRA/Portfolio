@@ -10,7 +10,7 @@ phases:
       - pwd
       - ls
       - aws --version
-      - aws s3 cp --recursive . s3:://www.carlosregaladodev.com
+      - aws s3 cp --recursive . s3://www.carlosregaladodev.com
   build:
     commands:
       - echo Build started on `date`

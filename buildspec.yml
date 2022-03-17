@@ -1,17 +1,8 @@
 version: 0.2
 
 phases:
-  pre_build:
-    commands:
-      - echo Installing dependencies
-      - node -v
-      - npm -v
-      - npm install
+
   build:
-    commands:
-      - echo Building project
-      - npm start
-  post_build:
     commands:
       - echo copying public build to S3
       - aws s3 cp --recursive /public/* s3://www.carlosregaladodev.com

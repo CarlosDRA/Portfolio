@@ -1,8 +1,14 @@
 version: 0.2
 
 phases:
-
+  pre_build:
+    commands:
+      - echo looking at files
+      - pwd
+      - ls
   build:
     commands:
       - echo copying public build to S3
-      - aws s3 cp --recursive /public/* s3://www.carlosregaladodev.com
+  post_build:
+    commands:
+      - echo Finished deploy

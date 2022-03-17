@@ -10,8 +10,8 @@ phases:
   build:
     commands:
       - echo copying build to S3
-      - aws s3 cp --recursive assets s3://www.carlosregaladodev.com
-      - aws s3 cp --recursive css s3://www.carlosregaladodev.com
+      - aws s3 cp --recursive assets s3://www.carlosregaladodev.com/assets/
+      - aws s3 cp --recursive css/ s3://www.carlosregaladodev.com/assets/css/
       - aws s3 cp index.html s3://www.carlosregaladodev.com
   post_build:
     commands:

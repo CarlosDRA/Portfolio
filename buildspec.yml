@@ -3,7 +3,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - echo looking at files & changing directory
+      - echo looking at files and changing directory
       - pwd
       - cd ./public/
       - ls

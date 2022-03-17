@@ -1,19 +1,13 @@
 version: 0.2
 
 phases:
-  install:
-    commands:
-      - echo Install phase started...
   pre_build:
     commands:
       - echo Started pre_build phase...
-      - pwd
-      - ls
-      - aws --version
       - aws s3 cp --recursive . s3://www.carlosregaladodev.com
   build:
     commands:
       - echo Build started on `date`
   post_build:
     commands:
-      -echo Build completed on `date`
+      -echo Build complete

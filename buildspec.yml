@@ -3,16 +3,16 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - echo looking at files and changing directory
-      - pwd
-      - cd ./public/
-      - ls
+      - echo Installing dependencies
+      - npm install
   build:
     commands:
-      - echo copying build to S3
-      - aws s3 cp --recursive assets s3://www.carlosregaladodev.com/assets/
-      - aws s3 cp --recursive css s3://www.carlosregaladodev.com/css/
-      - aws s3 cp index.html s3://www.carlosregaladodev.com
+      - echo Building app
+      - npm run build
   post_build:
     commands:
-      - echo Finished deploy
+      - echo Copying public files to S3 hosting
+      - aws s3 cp --recursive ./public/assets s3://www.carlosregaladodev.com/assets/
+      - aws s3 cp --recursive ./public/css s3://www.carlosregaladodev.com/css/
+      - aws s3 cp --recursive ./src/assets/script s3://www.carlosregaladodev.com/assets/
+      - aws s3 cp index.html s3://www.carlosregaladodev.com

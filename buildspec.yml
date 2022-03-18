@@ -3,6 +3,10 @@ version: 0.2
 phases:
   pre_build:
     commands:
+      - echo update npm
+      - sudo npm update npm
+      - echo update node
+      - sudo npm update node
       - echo Installing dependencies
       - npm install
   build:
@@ -12,7 +16,4 @@ phases:
   post_build:
     commands:
       - echo Copying public files to S3 hosting
-      - aws s3 cp --recursive ./public/assets s3://www.carlosregaladodev.com/assets/
-      - aws s3 cp --recursive ./public/css s3://www.carlosregaladodev.com/css/
-      - aws s3 cp --recursive ./src/assets/script s3://www.carlosregaladodev.com/assets/
-      - aws s3 cp index.html s3://www.carlosregaladodev.com
+      - aws s3 cp --recursive ./public/. s3://www.carlosregaladodev.com

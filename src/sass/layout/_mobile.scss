@@ -22,12 +22,19 @@
     align-items: center;
 }
 
-#about{
-    margin: 30px;
-}
-
 @media screen and (min-width: 540px) {
     .buttons-container{
         flex-direction: row;
     }
+}
+
+#about{
+    margin: 30px;
+}
+
+#projects{
+    background-color: c.$main-text;
+    color: c.$background-white;
+    padding: 30px;
+    min-height: calc(100vh - (65px + 60px));
 }

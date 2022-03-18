@@ -22,6 +22,10 @@
     align-items: center;
 }
 
+#about{
+    margin: 30px;
+}
+
 @media screen and (min-width: 540px) {
     .buttons-container{
         flex-direction: row;

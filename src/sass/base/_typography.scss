@@ -51,12 +51,18 @@ h3{
     text-align: center;
 }
 
+.about__text{
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: c.$main-text;
+}
+
 .about__card{
     h3{color: c.$accent-color}
 
     .text{
-        color: c.$main-text;
         font-weight: 400;
+        color: c.$main-text;
     }
 }
 

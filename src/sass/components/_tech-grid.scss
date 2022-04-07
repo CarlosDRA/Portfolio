@@ -1,0 +1,41 @@
+$margin: 25px 40px;
+
+.tech__img{
+    height: 80px;
+    width: auto;
+
+    img{
+        height: inherit;
+        width: auto;
+    }
+}
+
+.technologies__img__container{
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+}
+
+.technologies__languages{
+    margin: $margin;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.technologies__tools{
+    margin: $margin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+.technologies__other{
+    margin: $margin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}

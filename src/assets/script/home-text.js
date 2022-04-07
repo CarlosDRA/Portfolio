@@ -4,7 +4,7 @@ const words = ["DESIRE", "WANT", "NEED", "LOVE", "ADMIRE", "DREAM OF"];
 const wordContainer = document.querySelector(".word-play");
 
 
-function wordPlay(){
+export default function wordPlay(){
     wordContainer.innerText = randomWord(words);
     setInterval(() => {
         wordContainer.innerHTML = randomWord(words);
@@ -16,5 +16,3 @@ function randomWord(words){
     let word = words[number];
     return word;
 }
-
-export default wordPlay;

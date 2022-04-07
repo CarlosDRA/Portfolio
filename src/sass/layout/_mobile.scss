@@ -29,12 +29,18 @@
 }
 
 #about{
-    margin: 30px;
+    margin: 0 30px 70px 30px;
+    padding-top: 70px;
 }
 
 #projects{
+    min-height: calc(100vh - (65px));
     background-color: c.$main-text;
-    color: c.$background-white;
-    padding: 30px;
-    min-height: calc(100vh - (65px + 60px));
+
+    .projects__content{
+        //min-height: calc(100vh - (65px + 60px));
+        padding-top: 70px;
+        margin: 0 30px 70px 30px;
+        color: c.$background-white;
+    }
 }

@@ -6,7 +6,9 @@ export default function Work (){
         <div id="work">
             <h2>Here Are Some Of The Projects I’ve Worked On</h2>
             <div className="carousel">
-                <Card />
+                <Card className="card card-small left"/>
+                <Card className="card card-big middle"/>
+                <Card className="card card-small right"/>
             </div>
         </div>
     )

@@ -1,5 +1,7 @@
-.card{   
-    background-color: white;
+.card{
+    aspect-ratio: 8 / 5;
     border-radius: 8px;
     border: solid 1px black;
+    box-shadow: 0 20px 30px 1px rgb(0 0 0 / 0.3);
+    cursor: pointer;
 }

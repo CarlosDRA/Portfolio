@@ -18,31 +18,35 @@ function App() {
   }, [currentIndex])
   
   const handleRightClick = () => {
-    const nextIndex = currentIndex - 1 < 0 ? 2: currentIndex - 1;
+    const nextIndex = currentIndex + 1 <= group.length -1 ? currentIndex + 1: 0;
+    const prevIndex = currentIndex - 1 < 0 ? group.length - 1 : currentIndex - 1;
     
     const currentCard = document.querySelector(`[data-index="${currentIndex}"]`);
     const nextCard = document.querySelector(`[data-index="${nextIndex}"]`);
-    console.log(currentIndex, currentCard);
-    console.log(nextIndex)
+    const prevCard = document.querySelector(`[data-index="${prevIndex}"]`)
 
-    currentCard.dataset.status = "after";
-
+    prevCard.dataset.status="right";
+    currentCard.dataset.status = "left";
     nextCard.dataset.status = "active";
 
     setCurrentIndex(nextIndex);
   }
 
   const handleLeftClick = () => {
-    const nextIndex = currentIndex + 1 <= group.length - 1 ? currentIndex + 1: 0;
+    const nextIndex = currentIndex - 1 < 0 ? group.length - 1 : currentIndex - 1;
+    const prevIndex = currentIndex + 1 <= group.length -1 ? currentIndex + 1: 0;
     
     const currentCard = document.querySelector(`[data-index="${currentIndex}"]`);
     const nextCard = document.querySelector(`[data-index="${nextIndex}"]`);
-    console.log(currentIndex, currentCard);
-    console.log(nextIndex)
+    const prevCard = document.querySelector(`[data-index="${prevIndex}"]`);
 
-    currentCard.dataset.status = "after";
-
+    prevCard.dataset.status="left";
+    currentCard.dataset.status = "right";
     nextCard.dataset.status = "active";
+
+    console.log("Current index", currentIndex);
+    console.log("next index", nextIndex)
+    console.log("prevIndex", prevIndex);
 
     setCurrentIndex(nextIndex);
   }

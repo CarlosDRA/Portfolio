@@ -35,15 +35,6 @@
         background: center / cover no-repeat url("/images/30.03.2022_15.47.02_REC.png");
     }
 
-
-    .card-small{
-        width: 25vw;
-    }
-
-    .card-big{
-        width: 35vw;
-    }
-
     .left{
         position: absolute;
         left: 15%;
@@ -71,20 +62,22 @@
     .button{
         width: 25vw;
         aspect-ratio: 8 / 5;
-        background-color: rgb(0 0 0 / 0.2);
+        border-radius: 8px;
+        background-color: rgb(0 0 0 / 0.1);
+        opacity: 0;
         position: absolute;
         z-index: 3;
     }
 
     .button-right{
+        left: 50%;
         top: 50%;
-        right: 15%;
-        transform: translate(15%, -50%);
+        transform: translate(35%, -50%)
     }
 
     .button-left{
+        left: 50%;
         top: 50%;
-        left: 15%;
-        transform: translate(-15%, -50%);
+        transform: translate(-135%, -50%)
     }
 }

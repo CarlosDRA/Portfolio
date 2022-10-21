@@ -7,9 +7,9 @@ export default function Work (props){
         <div id="work">
             <h2>Here Are Some Of The Projects I’ve Worked On</h2>
             <div className="carousel">
-                <Card className="card card-big middle" index="0" status="active"/>
-                <Card className="card card-small left" index="1" status="unknown"/>
-                <Card className="card card-small right" index="2" status="unknown"/>
+                <Card className="card middle" index="0" status="active"/>
+                <Card className="card right"  index="1" status="right"/>
+                <Card className="card left"   index="2" status="left"/>
 
                 <button 
                     className="button button-right"

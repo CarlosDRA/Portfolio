@@ -24,19 +24,34 @@
     position: relative;
 
     :nth-child(1){
-        background: center / cover no-repeat url("/images/30.03.2022_15.47.17_REC.png");
+        background: center / cover no-repeat url("/images/project-1.png");
     }
-
     :nth-child(2){
-        background: center / cover no-repeat url("/images/30.03.2022_15.45.39_REC.png");
+        background: center / cover no-repeat url("/images/project-2.png");
     }
-
     :nth-child(3){
-        background: center / cover no-repeat url("/images/30.03.2022_15.47.02_REC.png");
+        background: center / cover no-repeat url("/images/project-3.png");
+    }
+    :nth-child(4){
+        background: center / cover no-repeat url("/images/project-4.png");
+    }
+    :nth-child(5){
+        background: center / cover no-repeat url("/images/project-5.png");
+    }
+    :nth-child(6){
+        background: center / cover no-repeat url("/images/project-6.png");
+    }
+    :nth-child(7){
+        background: center / cover no-repeat url("/images/project-7.png");
+    }
+    :nth-child(8){
+        background: center / cover no-repeat url("/images/project-8.png");
+    }
+    :nth-child(9){
+        background: center / cover no-repeat url("/images/project-9.png");
     }
 
     .left{
-        position: absolute;
         left: 15%;
         top: 50%;
         transform: translate(-15%, -50%);
@@ -44,7 +59,6 @@
     }
 
     .middle{
-        position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
@@ -52,7 +66,6 @@
     }
 
     .right{
-        position: absolute;
         top: 50%;
         right: 15%;
         transform: translate(15%, -50%);

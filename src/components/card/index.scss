@@ -3,6 +3,7 @@
     aspect-ratio: 8 / 5;
     border-radius: 8px;
     border: solid 1px black;
+    position: absolute;
     box-shadow: 0 20px 30px 1px rgb(0 0 0 / 0.3);
     cursor: pointer;
     transition: transform 400ms ease;
@@ -12,7 +13,7 @@
     left: 50%;
     top: 50%;
     transform: translate(35%, -50%) scale(0.98);
-    z-index: 3;
+    z-index: 2;
 }
 
 .card[data-status="active"]{
@@ -26,9 +27,12 @@
     left: 50%;
     top: 50%;
     transform: translate(-135%, -50%) scale(0.98);
-    z-index: 3;
+    z-index: 2;
 }
 
 .card[data-status="hidden"]{
-
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }

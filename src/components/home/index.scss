@@ -10,22 +10,50 @@
     z-index: 10;
     overflow: hidden;
 
-    :before {
+    &:before {
         content: "";
         position: absolute;
-        top: 150px; 
+        top: 50px; 
         left: 0;
         width: 100%; 
         height: 100%;
-        background: center / cover no-repeat url("../../assets/background-1.jpg");
+        background: center / cover no-repeat url("src/assets/home-background.jpg");
         opacity: 40%;
-        filter: grayscale(60%) blur(2px);
+        filter: grayscale(40%) blur(2px) opacity(0.7);
         z-index: -5;
     }
 
     h1{
-        font-size: 96px;
+        font-size: clamp(2.5rem, 5vmax, 6rem);
         font-weight: 500;
         margin: 0;
+    }
+    h2{
+        font-size: clamp(2.2rem, 4.5vmax, 5.5rem);
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .buttons-container{
+        width: 250px;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+
+        a{
+            height: 40px;
+            width: 100px;
+            border-radius: 50px;
+            border: solid 2px white;
+            background: none;
+            color: white;
+            text-decoration: none;
+            display: grid;
+            justify-items: center;
+            align-content: center;
+        }
     }
 }

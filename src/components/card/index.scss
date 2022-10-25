@@ -4,10 +4,44 @@
     border-radius: 8px;
     border: solid 1px black;
     position: absolute;
-    box-shadow: 0 20px 30px 1px rgb(0 0 0 / 0.3);
-    cursor: pointer;
+    box-shadow: 0 20px 50px 1px rgba(44, 87, 143, 0.3);
     transition: transform 400ms ease;
+    
+    .links-container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background: rgba(7, 1, 1, 0.507);
+        backdrop-filter: blur(1px);
+        opacity: 0;
+        transition: opacity 400ms 100ms ease;
+
+        .link{
+            background: none;
+            cursor: pointer;
+            color: white;
+            text-decoration: none;
+        }
+
+        .icon{
+            font-size: 5rem;
+            color: white;
+            background: none;
+        }
+
+        &:hover{
+            opacity: 1;
+        }
+        
+    }
+    
+    .hidden{
+        display: none;
+    }
 }
+
 
 .card[data-status="right"]{
     left: 50%;

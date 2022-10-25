@@ -7,15 +7,60 @@ export default function Work (props){
         <div id="work">
             <h2>Here Are Some Of The Projects I’ve Worked On</h2>
             <div className="carousel">
-                <Card className="card" index="0" status="active"/>
-                <Card className="card" index="1" status="right"/>
-                <Card className="card" index="2" status="hidden"/>
-                <Card className="card" index="3" status="hidden"/>
-                <Card className="card" index="4" status="hidden"/>
-                <Card className="card" index="5" status="hidden"/>
-                <Card className="card" index="6" status="hidden"/>
-                <Card className="card" index="7" status="hidden"/>
-                <Card className="card" index="8" status="left"/>
+                <Card 
+                    index="0" 
+                    status="active"
+                    code="https://github.com/CarlosDRA/FrontendMentor-social-proof-section"
+                    url="https://sharp-nobel-68b0d6.netlify.app/"
+                />
+                <Card 
+                    index="1" 
+                    status="right" 
+                    code="https://github.com/CarlosDRA/Etch-a-Sketch"
+                    url="https://laughing-pasteur-17ca00.netlify.app/"
+                />
+                <Card 
+                    index="2" 
+                    status="hidden"
+                    code="https://github.com/CarlosDRA/Quizzical-app"
+                    url="https://heartfelt-paletas-e2242a.netlify.app/"
+                />
+                <Card 
+                    index="3" 
+                    status="hidden"
+                    code="https://github.com/CarlosDRA/library"
+                    url="https://cosmic-crepe-23daab.netlify.app/"
+                />
+                <Card 
+                    index="4" 
+                    status="hidden"
+                    code="https://github.com/CarlosDRA/FrontendMentor-3-column-preview"
+                    url="https://eager-beaver-d35aef.netlify.app/"
+                />
+                <Card 
+                    index="5" 
+                    status="hidden"
+                    code="https://github.com/CarlosDRA/FrontendMentor-stats-preview-component"
+                    url="https://silly-curie-705f5e.netlify.app/"
+                />
+                <Card 
+                    index="6" 
+                    status="hidden"
+                    code="https://github.com/CarlosDRA/FrontendMentor-FAQ-accordion"
+                    url="https://laughing-galileo-7203a9.netlify.app/"
+                />
+                <Card 
+                    index="7" 
+                    status="hidden"
+                    code="https://github.com/CarlosDRA/FrontendMentor-article-preview"
+                    url="https://agitated-lovelace-cd2d93.netlify.app/"
+                />
+                <Card 
+                    index="8" 
+                    status="left"
+                    code="https://github.com/CarlosDRA/FrontendMentor-Four-card-feature-section"
+                    url="https://clever-chandrasekhar-40fd9b.netlify.app/"
+                />
 
                 <button 
                     className="button button-right"

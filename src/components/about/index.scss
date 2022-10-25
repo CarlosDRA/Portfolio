@@ -13,12 +13,13 @@
 
 .about_text-container{
     display: grid;
+    width: 50%;
 
     h2{
         margin: 172px 0 0 0;
         padding: 0;
-        font-size: 3.5rem;
-        width: 950px;
+        //font-size: 3.5rem; <- original
+        font-size: clamp(1.8rem, 2.9vmax, 3.5rem);
         height: 200px;
         text-align: right;
         justify-self: right;
@@ -26,8 +27,8 @@
 
     p{
         padding: 0;
-        font-size: 2.3rem;
-        width: 570px;
+        //font-size: 2.3rem; <- original
+        font-size: clamp(1.4rem, 1.9vmax, 2.3rem);
         height: 200px;
         text-align: right;
         justify-self: right;
@@ -35,8 +36,17 @@
 }
 
 .about_tech-container{
-    height: 500px;
-    width: 700px;
-    margin: 250px 0 0 0;
-    background-color: white;
+    width: 40%;
+    margin: 150px auto 150px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+    //font-size: 5rem; <- original
+    font-size: clamp(2.2rem, 4.15vmax, 5rem);
+
+    .tech-logo{
+        text-shadow: 10px 15px 10px rgb(255 255 255 / 0.25);
+    }
 }

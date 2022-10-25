@@ -25,6 +25,11 @@ export default function About (){
                 <i className="devicon-windows8-original colored tech-logo"></i>
                 <i className="devicon-ubuntu-plain colored tech-logo"></i>
             </div>
+            
+            <div className="background-reference">
+                <a href="https://unsplash.com/photos/Rom5W-7hKCs?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" target="_blank">Photo</a> by <a href="https://unsplash.com/@yourmatecaleb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Caleb Shong</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
+  
+            </div>
         </div>
     )
 }

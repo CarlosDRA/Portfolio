@@ -71,6 +71,10 @@ export default function Work (props){
                     onClick={props.handleLeftClick}
                 ></button>
             </div>
+            
+            <div className="background-reference">
+                <a href="https://unsplash.com/photos/QEDXqtje6fw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" target="_blank">Photo</a> by <a href="https://unsplash.com/@samferrara?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Samuel Ferrara</a> on <a href="https://unsplash.com/s/photos/city-night?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
+            </div>
         </div>
     )
 }

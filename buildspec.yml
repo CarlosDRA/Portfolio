@@ -16,4 +16,4 @@ phases:
   post_build:
     commands:
       - echo Copying public files to S3 hosting
-      - aws s3 cp --recursive ./dist/ s3://www.carlosregaladodev.com
+      - aws s3 cp --recursive ./dist s3://www.carlosregaladodev.com

@@ -3,10 +3,8 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - echo update npm
-      - sudo npm update npm
-      - echo update node
-      - sudo npm update node
+      - echo Install latest npm version
+      - sudo npm i -g npm@latest
       - echo Installing dependencies
       - npm install
   build:
@@ -15,5 +13,5 @@ phases:
       - npm run build
   post_build:
     commands:
-      - echo Copying public files to S3 hosting
+      - echo Copying project files to S3 hosting
       - aws s3 cp --recursive ./dist s3://www.carlosregaladodev.com

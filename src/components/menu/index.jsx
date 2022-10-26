@@ -6,7 +6,7 @@ export default function Menu() {
         <nav className="nav-bar">
             <div className="nav-logo_container">
                 <a href="#home">
-                    <img src="src/assets/logo.svg" alt="logo" />
+                    {/* <img src="src/assets/logo.svg" alt="logo" /> */}
                 </a>
             </div>
             <div className="nav-links">

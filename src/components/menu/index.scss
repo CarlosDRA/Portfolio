@@ -1,7 +1,7 @@
 .nav-bar{
     width: 100vw;
-    height: 100px;
-    padding: 0 100px;
+    height: 80px;
+    padding: 0 10px;
     margin: 0;
     position: fixed;
     top: 0;
@@ -15,11 +15,13 @@
     backdrop-filter: blur(2px);
 
     .nav-logo_container{
-        width: 180px;
-        height: 80px;
+        width: 80px;
+        height: 40px;
+        margin-left: 3vmin;
         display: flex;
         justify-content: center;
         align-items: center;
+        background: center / contain no-repeat url("src/assets/CR.svg");
 
         a{
             height: 100%;
@@ -33,18 +35,24 @@
     }
 
     .nav-links{
-        height: 100%;
-        width: 500px;
+        height: 200%;
+        width: 150px;
         margin: 0;
         padding: 0;
         color: #F2F2F2;
         font-weight: 200;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #080403c9;
+        backdrop-filter: blur(2px);
 
         ul{
             height: 100%;
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             justify-content: space-around;
             align-items: center;
         }
@@ -61,4 +69,77 @@
             color: inherit
         }
     }
+}
+
+
+@media screen and (min-width: 768px){
+    .nav-bar{
+        width: 100vw;
+        height: 100px;
+        padding: 0 100px;
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 36px;
+        z-index: 20;
+        background-color: #080403c9;
+        backdrop-filter: blur(2px);
+    
+        .nav-logo_container{
+            width: 180px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: center / contain no-repeat url("src/assets/logo.svg");
+
+            a{
+                height: 100%;
+                width: 100%;
+                text-align: center;
+            }
+    
+            img{
+                height: 100%;
+            }
+        }
+    
+        .nav-links{
+            height: 100%;
+            width: 500px;
+            margin: 0;
+            padding: 0;
+            color: #F2F2F2;
+            font-weight: 200;
+            position: static;
+            
+    
+            ul{
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+    
+            li{
+                list-style-type: none;
+                &:hover{
+                    color: rgb(104, 104, 104);
+                }
+            }
+    
+            a{
+                text-decoration: none;
+                color: inherit
+            }
+        }
+    }
+    
 }

@@ -1,3 +1,5 @@
+import './App.scss'
+
 import Menu from "./components/menu/index";
 import Home from "./components/home/index";
 import About from "./components/about/index";
@@ -5,9 +7,6 @@ import Work from "./components/work/index";
 import Contact from "./components/contact/index";
 
 import { useState, useEffect } from "react";
-
-import './App.scss'
-
 
 function App() {
 

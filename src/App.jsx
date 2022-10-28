@@ -54,7 +54,7 @@ function App() {
   }
 
   return (
-    <div className='app'>
+    <main className='app'>
       <Menu />
       <Home />
       <About />
@@ -63,7 +63,7 @@ function App() {
         handleRightClick={handleRightClick}
       />
       <Contact />
-    </div>
+    </main>
   )
 }
 

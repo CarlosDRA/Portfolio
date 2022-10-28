@@ -1,6 +1,4 @@
 import "./index.scss";
-import { FaEnvelope } from "react-icons/fa";
-
 
 export default function Contact (){
     return(
@@ -23,8 +21,6 @@ export default function Contact (){
                             <i className="devicon-github-original"></i>
                         </a>
                     </div>
-                    
-                    {/* <FaEnvelope className="link email-link"/> */}
                 </div>
             </div>
 

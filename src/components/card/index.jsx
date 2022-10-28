@@ -21,6 +21,9 @@ export default function Card(props){
     return(
         <div 
             className="card" 
+            title={props.title}
+            role="img" 
+            aria-label={props.title}
             data-index={props.index} 
             data-status={props.status}
             onMouseEnter={mouseOver}
